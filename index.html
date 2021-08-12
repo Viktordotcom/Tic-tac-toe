@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="para-container">
+    <p id="h1" class="currentH"></p>
+    <p id="h2" class="currentH"></p>
+    </div>
+    <div class="container"id="container">
+        <div data-col="0" data-row="0"class="box" ></div>
+        <div data-col="0" data-row="1" class="box"></div>
+        <div data-col="0" data-row="2" id="outer1"class="box"></div>
+        <div data-col="1" data-row="0" class="box"></div>
+        <div data-col="1" data-row="1" class="box"></div>
+        <div data-col="1" data-row="2" id="outer2"class="box"></div>
+        <div data-col="2" data-row="0" id="outer4"class="box"></div>
+        <div data-col="2" data-row="1" id="outer5"class="box"></div>
+        <div data-col="2" data-row="2" id="outer3"class="box"></div>
+    </div>
+    <div id="btn-container">
+        <button id="btn-HUMAN">Play vs Human</button>
+        <button id="btn-AI">Play vs AI</button>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <div id="input-container">         
+            <input type="text" name="name" class="inputs" id="input-h1" placeholder="Player 1">
+            <input type="text" name="name2" class="inputs" id="input-h2" placeholder="Enter Player 2">
+        </div>
+        <button id="btn-HUMAN-hidden">Play vs Human</button>
+        <button id="btn-AI-hidden">Play vs AI</button>
+      </div>
+</body>
+</html>

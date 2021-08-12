@@ -1,0 +1,125 @@
+:root{
+    background-color: #8f3985;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 125px);
+    margin-top: 50px;
+}
+.box{
+    display: flex;
+    width: 125px;
+    height: 125px;
+    font-size: 55px;
+    color:white;
+    cursor: pointer;
+    border-right: 5px ridge white;
+    border-bottom: 5px groove white;
+    align-items: center;
+    justify-content: center;
+}
+#outer1{
+    border-right: none;
+}
+
+#outer2{
+    border-right: none;
+}
+#outer3{
+    border-right: none;
+    border-bottom: none;
+}
+#outer4{
+    border-bottom: none;
+}
+#outer5{
+    border-bottom: none;
+}
+#input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+
+}
+.inputs{
+margin: 10px;
+width: 400px;
+height: 30px;
+}
+.currentH{
+    font-size: 2rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .10em .5em;
+    margin: 15px;
+}
+#para-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.currentH.highlight{
+    transform: scale(1.2);
+}
+#btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#btn-HUMAN.hidden{
+    display:none
+}
+
+button{
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+  }
+  .winning-message.show {
+    display: flex;
+  }
+  @media (max-width: 450px){
+      .winning-message{
+          font-size: 2.5rem;
+      }
+      .inputs{
+          width: 350px;
+
+      }
+      button{
+          width: 350px;
+          font-size: 2rem;
+      }
+  }
